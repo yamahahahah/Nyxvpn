@@ -1,51 +1,81 @@
-name: Проверка срока подписки
+name: 🕐 Управление подписками
 
 on:
   schedule:
-    # Запуск каждый день в 00:00 UTC
-    - cron: '0 0 * * *'
-  workflow_dispatch: # Можно запускать вручную
+    # Запуск каждый день в 00:00 и 12:00 UTC (03:00 и 15:00 МСК)
+    - cron: '0 0,12 * * *'
+  workflow_dispatch:  # Можно запускать вручную
 
 jobs:
-  check-expiry:
+  manage-subscriptions:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      
     steps:
-      - name: Клонируем репозиторий
+      - name: 📥 Клонируем репозиторий
         uses: actions/checkout@v3
-        
-      - name: Запускаем проверку
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: 🔧 Делаем скрипт исполняемым
+        run: chmod +x scripts/check_subscriptions.sh
+      
+      - name: ⏰ Запускаем проверку подписок
+        id: check
         run: |
-          # Текущая дата в секундах (timestamp)
-          current_date=$(date +%s)
+          # Запускаем скрипт и сохраняем вывод
+          ./scripts/check_subscriptions.sh > logs/last_run.log 2>&1
           
-          # Проходим по всем файлам пользователей
-          for user_file in users/*.txt; do
-            echo "Проверяем $user_file"
-            
-            # Ищем строку с expire=
-            expire_line=$(grep "#subscription-userinfo:" "$user_file")
-            
-            # Вытаскиваем дату окончания
-            if [[ $expire_line =~ expire=([0-9]+) ]]; then
-              expire_date="${BASH_REMATCH[1]}"
-              
-              # Если срок прошёл
-              if [ $current_date -gt $expire_date ]; then
-                echo "Срок истёк! Удаляем $user_file"
-                
-                # Удаляем файл
-                rm "$user_file"
-                
-                # Отправляем уведомление (опционально)
-                # curl -s "https://api.telegram.org/bot$TOKEN/sendMessage?chat_id=ID&text=Срок+истек"
-              fi
-            fi
-          done
+          # Извлекаем количество напоминаний и удалений
+          reminded=$(grep "Напоминаний отправлено:" logs/last_run.log | grep -o '[0-9]\+' || echo "0")
+          deleted=$(grep "Отключено сегодня:" logs/last_run.log | grep -o '[0-9]\+' || echo "0")
           
-      - name: Сохраняем изменения
+          echo "reminded=$reminded" >> $GITHUB_OUTPUT
+          echo "deleted=$deleted" >> $GITHUB_OUTPUT
+          
+          # Показываем лог
+          cat logs/last_run.log
+      
+      - name: 📱 Отправляем уведомления в Telegram (напоминания)
+        if: steps.check.outputs.reminded > 0
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            ⏰ **Напоминания об окончании подписки (2 дня)**
+            
+            Сегодня нужно напомнить **${{ steps.check.outputs.reminded }}** пользователям.
+            
+            Проверьте логи: https://github.com/${{ github.repository }}/actions/runs/${{ github.run_id }}
+      
+      - name: 📱 Отправляем уведомления в Telegram (отключения)
+        if: steps.check.outputs.deleted > 0
+        uses: appleboy/telegram-action@master
+        with:
+          to: ${{ secrets.TELEGRAM_CHAT_ID }}
+          token: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          message: |
+            ❌ **Автоматически отключены подписки**
+            
+            Сегодня истекло и отключено: **${{ steps.check.outputs.deleted }}** подписок.
+            
+            Файлы перемещены в users/expired/
+      
+      - name: 💾 Сохраняем изменения
         run: |
-          git config --global user.name "GitHub Actions"
+          git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add .
-          git diff --quiet && git diff --staged --quiet || git commit -m "Автоудаление истёкших подписок"
-          git push
+          
+          # Добавляем все изменения
+          git add users/ logs/
+          
+          # Проверяем, есть ли изменения для коммита
+          if ! git diff --quiet && ! git diff --staged --quiet; then
+            git commit -m "🕐 Автообновление подписок ($(date +%Y-%m-%d))"
+            git push
+            echo "📤 Изменения отправлены на GitHub"
+          else
+            echo "✨ Нет изменений для коммита"
+          fi 
