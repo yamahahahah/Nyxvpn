@@ -4,6 +4,7 @@
 #support-url: https://t.me/NyxVPNtgk
 #profile-web-page-url: https://t.me/BlackSupportt
 #announce: base64:4pqT77iPICjQv9C+0LTRgNC+0LHQvdC+0YHRgtGMINGA0LXQutC70LDQvNGDINGC0YPQtCk6IDI0Lzct0LDRg9C00LjQv9C10L3QuNC1INC30LDRgNCw0L3RgtC40YDQvtCy0LDQvdC90L4g4pyo0J/QoNCe0JTQm9CV0J3QmNCVINCn0LXQoNC1INCX0JjQn9Ch0KHQo9Cc0KPQpiDihKIK0JrQvtC90YHRg9C70YzRgtCw0YbQuNGPOiBAdnBuTnl4Ym90
+#announce: base64:8J+Rv+KAje+4j9Cf0L7QtNC/0LjRgdC60LAg0LTRg9GA0LDQtdGCIDIg0LzQtdGB0Y/RhtCwIQrQn9GA0L7QtNC70LXQvdC40LU6IEB2cG5OeXhib3QK0J/QvtC00LXRgNC20LrQsDogQEJsYWNrU3VwcG9ydHQ=
 
 vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.94.162:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=87cc0414902bee2d&spx=/#RU 🌐 [@NyxVPNtgk] Anycast-1
 vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.5.137:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=17f0f0e38f01af5a&spx=/#RU 🌐 [@NyxVPNtgk] Anycast-2
