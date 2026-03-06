@@ -1,0 +1,51 @@
+name: Проверка срока подписки
+
+on:
+  schedule:
+    # Запуск каждый день в 00:00 UTC
+    - cron: '0 0 * * *'
+  workflow_dispatch: # Можно запускать вручную
+
+jobs:
+  check-expiry:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Клонируем репозиторий
+        uses: actions/checkout@v3
+        
+      - name: Запускаем проверку
+        run: |
+          # Текущая дата в секундах (timestamp)
+          current_date=$(date +%s)
+          
+          # Проходим по всем файлам пользователей
+          for user_file in users/*.txt; do
+            echo "Проверяем $user_file"
+            
+            # Ищем строку с expire=
+            expire_line=$(grep "#subscription-userinfo:" "$user_file")
+            
+            # Вытаскиваем дату окончания
+            if [[ $expire_line =~ expire=([0-9]+) ]]; then
+              expire_date="${BASH_REMATCH[1]}"
+              
+              # Если срок прошёл
+              if [ $current_date -gt $expire_date ]; then
+                echo "Срок истёк! Удаляем $user_file"
+                
+                # Удаляем файл
+                rm "$user_file"
+                
+                # Отправляем уведомление (опционально)
+                # curl -s "https://api.telegram.org/bot$TOKEN/sendMessage?chat_id=ID&text=Срок+истек"
+              fi
+            fi
+          done
+          
+      - name: Сохраняем изменения
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git add .
+          git diff --quiet && git diff --staged --quiet || git commit -m "Автоудаление истёкших подписок"
+          git push
