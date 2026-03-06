@@ -1,9 +1,17 @@
-#profile-title: base64:8J+Rv+KAje+4j0BOWVhWTlAgLS3Qm9C40YfQvdGL0Lkg0LrQsNCx0LjQvdC10YI=
+#profile-title: base64:8J+Rv+KAje+4j0BOWVhWTlAgLS3Qm9C40YfQvdGL0Lkg0LrQsNCx0LjQvdC10YIgKNC00L7QsdCw0LLQu9GP0LXQvCDQtNC+0LLQtdGA0Y/RjtGJ0LXQs9C+KQ==
 #profile-update-interval: 24
 #subscription-userinfo: upload=0; download=0; total=322122547200; expire=1750089600
-#support-url: https://t.me/BlackSupportt
-#profile-web-page-url: https://t.me/NyxVPNtgk
-#announce: base64:4pqT77iPINCf0L7QtNC/0LjRgdC60LAg0LTQviAwMi4wNy4yMDI1
+#support-url: https://t.me/NyxVPNtgk
+#profile-web-page-url: https://t.me/BlackSupportt
+#announce: base64:4pqT77iPICjQv9C+0LTRgNC+0LHQvdC+0YHRgtGMINGA0LXQutC70LDQvNGDINGC0YPQtCk6IDI0Lzct0LDRg9C00LjQv9C10L3QuNC1INC30LDRgNCw0L3RgtC40YDQvtCy0LDQvdC90L4g4pyo0J/QoNCe0JTQm9CV0J3QmNCVINCn0LXQoNC1INCX0JjQn9Ch0KHQo9Cc0KPQpiDihKIK0JrQvtC90YHRg9C70YzRgtCw0YbQuNGPOiBAdnBuTnl4Ym90
 
-vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.94.162:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=87cc0414902bee2d&spx=/#RU 🌐 [@NyxVPNtgk] Сервер 1
-vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.5.137:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=17f0f0e38f01af5a&spx=/#RU 🌐 [@NyxVPNtgk] Сервер 2
+vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.94.162:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=87cc0414902bee2d&spx=/#RU 🌐 [@NyxVPNtgk] Anycast-1
+vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.5.137:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=17f0f0e38f01af5a&spx=/#RU 🌐 [@NyxVPNtgk] Anycast-2
+vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.5.137:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=cd57a927f6b72d81&spx=/#RU 🌐 [@NyxVPNtgk] Anycast-3
+vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.68.90:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=api-maps.yandex.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=c8597fb67d55d9c4&spx=/#RU 🌐 [@NyxVPNtgk] Anycast-4
+vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.68.90:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=ads.x5.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=4b523a98e1bbd15b&spx=/#RU [@NyxVPNtgk] X5-1
+vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.72.243:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=ads.x5.ru&pbk=FkmYFobwxLMLEktYXywmjthuEYCZggITsxwPNasTKUg&sid=17f0f0e38f01af5a&spx=/#RU [@NyxVPNtgk] X5-2
+vless://a5ca6aa5-0354-07d0-b094-741b1dfe4daa@109.120.189.87:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=max.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#RU 🇷🇺 [@NyxVPNtgk] VK (max.ru)
+vless://d6222986-6f3b-4e6d-ae8f-8e3cc833e9ac@109.120.181.41:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=io.ozone.ru&pbk=jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU#RU 🇷🇺 [@NyxVPNtgk] VK (ozone)
+vless://2030daef-3048-4a1c-9573-8888e7e2f6b5@79.137.174.106:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=random&sni=rbc.ru&pbk=7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg&sid=8ba12e75110b7a9c#HU 🇭🇺 [@NyxVPNtgk] VK (rbc.ru)
+vless://a5ca6aa5-0354-07d0-b094-741b1dfe4daa@212.193.153.187:443?type=ws&host=lk-cdn.deploy-assure.ru&path=//&security=tls&sni=lk-cdn.deploy-assure.ru&alpn=h2,http/1.1&fp=chrome&allowInsecure=0#RU [@NyxVPNtgk] WS Tunnel
