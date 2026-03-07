@@ -1,9 +1,9 @@
-#profile-title: base64:8J+Rv+KAje+4j0BOWVhWTlAgLS3Qm9C40YfQvdGL0Lkg0LrQsNCx0LjQvdC10YIgKDDihKbigJ3igJ0g0L7QtNC90L4g0YPRgdGC0YDQvtC50YHRgtCy0L4p
+#profile-title: base64:8J+Rv+KAje+4j0BOWVhWTlAgLSDQn9C+0LTQv9C40YHQutCwIDIg0LzQtdGB0Y/RhtCwICjRgdGH0ZLRiyDRgdC80L7QvNC10L3RgtCwINC00L7QsdCw0LLQu9C10L3QuNGPKQ==
 #profile-update-interval: 12
-#subscription-userinfo: upload=0; download=0; total=322122547200; expire=ДАТА_ОКОНЧАНИЯ
+#subscription-userinfo: upload=0; download=0; total=322122547200; expire=0
 #support-url: https://t.me/BlackSupportt
 #profile-web-page-url: https://t.me/NyxVPNtgk
-#announce: base64:8J+UoSDQn9C+0LTQv9C40YHQutCwINC00LXRidC10LLQsCAyINC80LXRgdGP0YbQsAriip7igI3igI0g0J/RgNC+0LTQu9C40YLQvdC1OiBAdnBuTnl4Ym90CuKajiDigI3igI0g0J/QvtC00LTQtdGA0LbQutCwOiBAQmxhY2tTdXBwb3J0dA==
+#announce: base64:8J+UoSDQn9C+0LTQv9C40YHQutCwINC00LXQudGB0YLQstGD0LXRgiAyINC80LXRgdGP0YbQsCDQvtGCINC80L7QvNC10L3RgtCwINC00L7QsdCw0LLQu9C10L3QuNGP IQriip7igI3igI0g0J/RgNC+0LTQu9C40YLQvdC1OiBAdnBuTnl4Ym90CuKajiDigI3igI0g0J/QvtC00LTQtdGA0LbQutCwOiBAQmxhY2tTdXBwb3J0dA==
 
 #meta-params: autoConnectToLowestDelayServer=true; pingInterval=15
 
