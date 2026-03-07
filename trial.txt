@@ -1,4 +1,4 @@
-#profile-title: base64:8J+Rv+KAje+4j0BOWVhWTlAg4pewINCf0YDQvtCx0LAgNyDQtNC90LXQuSDwn4yPIPCfkaA=
+#profile-title: base64:8J+Rv+KAje+4j0BOWVhWTlAg4pewINCf0YDQvtCx0LA6IDcg0LTQvdC10Lkg8J+UryDwn4yP
 #profile-update-interval: 12
 #subscription-userinfo: upload=0; download=0; total=10737418240; expire=0
 #expire-warning: 3,1,0
@@ -6,20 +6,20 @@
 #profile-web-page-url: https://t.me/NyxVPNtgk
 #provider-id: NYXVPN-TRIAL-2025
 #fallback-url: https://raw.githubusercontent.com/yamahahahah/Nyxvpn-backup/main/trial.txt
-#announce: base64:8J+UoSDQn9GA0L7QsdC90LDRjyDQv9C+0LTQv9C40YHQutCwIDcg0LTQvdC10Lkg8J+QuQrinZPigI3igI0g0J/RgNC+0LTQu9C40YLQvdC1OiBAdnBuTnl4Ym90CuKmiuKAjeKAjSDQn9C+0LTQtNC10YDQttC60LA6IEBCbGFja1N1cHBvcnR0DQrwn5SgINCh0LrQuNC00LrQsCDQvdCwINC/0LXRgNCy0YvQtSDQtNC70Y8g0L/QvtC70L3QvtGG0LXQvdC90L7QuSDRgtCw0YDQuNGE0LAgOiDQmNC90YTQviAtINCU0L7Qu9Cz0L7QtSDQvdCw0LbQsNGC0LjQtQ==
+#announce: base64:8J+UryDQn9GA0L7QsdCw0Y8g0L/QvtC00L/QuNGB0LrQsDog0L3QsCA3INC00L3QtdC5IPCfjI8K4p2k77iPINCf0YDQvtC00LvQtdC90LjQtTogQHZwbk55eGJvdAripoLigI3igI0g0J/QvtC00LTQtdGA0LbQutCwOiBAQmxhY2tTdXBwb3J0dA0K8J+UryDQodC60LjQtNC60LAg0L3QsCDQv9C10YDQstGL0Lkg0YDQsNC3OiDQmNC90YTQviAtINCU0L7Qu9Cz0L7QtSDQvdCw0LbQsNGC0LjQtQ==
 
 #meta-params: autoConnectToLowestDelayServer=true; pingInterval=15; bypassLocal=true; remoteDNS=94.140.14.14; domesticDNS=77.88.8.8; pingViaProxy=true; hideSettings=false
 
-# 🔥 NyxVPN - Пробная подписка 7 дней
+# 🔥 NyxVPN - Пробная подписка 7 дней 🔥
 # 📅 Дата обновления: 07.03.2026
 # 📊 Всего серверов: 3
 # ⚡ Лимит трафика: 10 ГБ
 
-vless://0d3e2d21-f31b-07d0-b418-54cacd0be7c4@212.193.157.118:443?type=ws&host=lk-cdn.deploy-assure.ru&path=//&security=tls&sni=lk-cdn.deploy-assure.ru&alpn=h2,http/1.1&fp=chrome&allowInsecure=0#🇷🇺 🟠 VK #7 [📱Telegram] [@NyxVPNtgk]
-vless://0d3e2d21-f31b-07d0-b418-54cacd0be7c4@109.120.189.87:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=max.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#🇷🇺 🔵 VK #2 [⚡Основной] [@NyxVPNtgk]
-vless://0d3e2d21-f31b-07d0-b418-54cacd0be7c4@212.193.153.187:443?flow=&type=ws&host=lk-cdn.deploy-assure.ru&path=//&security=tls&sni=lk-cdn.deploy-assure.ru&alpn=http/1.1,h2&fp=chrome&allowInsecure=0#🇷🇺 🟠 VK #1 [🔄Резерв] [@NyxVPNtgk]
+vless://0d3e2d21-f31b-07d0-b418-54cacd0be7c4@212.193.157.118:443?type=ws&host=lk-cdn.deploy-assure.ru&path=//&security=tls&sni=lk-cdn.deploy-assure.ru&alpn=h2,http/1.1&fp=chrome&allowInsecure=0#🇷🇺 🟠 VK #7 [📱Telegram] [@NyxVPNtgk] 🔥
+vless://0d3e2d21-f31b-07d0-b418-54cacd0be7c4@109.120.189.87:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=max.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#🇷🇺 🔵 VK #2 [⚡Основной] [@NyxVPNtgk] 🔥
+vless://0d3e2d21-f31b-07d0-b418-54cacd0be7c4@212.193.153.187:443?flow=&type=ws&host=lk-cdn.deploy-assure.ru&path=//&security=tls&sni=lk-cdn.deploy-assure.ru&alpn=http/1.1,h2&fp=chrome&allowInsecure=0#🇷🇺 🟠 VK #1 [🔄Резерв] [@NyxVPNtgk] 🔥
 
 # 🔒 Дополнительная информация
-# 📌 Пробный период: 7 дней с момента добавления
+# 📌 Пробный период: 7 дней с момента добавления 🔥
 # 📌 Лимит: 10 ГБ
 # 📌 После окончания: @vpnNyxbot для продления
