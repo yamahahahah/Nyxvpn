@@ -1,9 +1,9 @@
-#profile-title: base64:8J+Rv+KAje+4j0BOWVhWTlAgLSDQn9C+0LTQv9C40YHQutCwIDIg0LzQtdGB0Y/RhtCwICjRgdGH0ZLRiyDRgdC80L7QvNC10L3RgtCwINC00L7QsdCw0LLQu9C10L3QuNGPKQ==
+#profile-title: base64:8J+Rv+KAje+4j0BOWVhWTlAg4pewIDIg0LzQtdGB0Y/RhtCwIPCfjI8=
 #profile-update-interval: 12
 #subscription-userinfo: upload=0; download=0; total=322122547200; expire=0
 #support-url: https://t.me/BlackSupportt
 #profile-web-page-url: https://t.me/NyxVPNtgk
-#announce: base64:8J+UoSDQn9C+0LTQv9C40YHQutCwINC00LXQudGB0YLQstGD0LXRgiAyINC80LXRgdGP0YbQsCDQvtGCINC80L7QvNC10L3RgtCwINC00L7QsdCw0LLQu9C10L3QuNGP IQriip7igI3igI0g0J/RgNC+0LTQu9C40YLQvdC1OiBAdnBuTnl4Ym90CuKajiDigI3igI0g0J/QvtC00LTQtdGA0LbQutCwOiBAQmxhY2tTdXBwb3J0dA==
+#announce: base64:8J+UoSDQn9C+0LTQv9C40YHQutCwIDIg0LzQtdGB0Y/RhtCwIPCfkLkK4p2k77iPINCf0YDQvtC00LvQtdC90LjQtTogQHZwbk55eGJvdAripoLigI3igI0g0J/QvtC00LTQtdGA0LbQutCwOiBAQmxhY2tTdXBwb3J0dA==
 
 #meta-params: autoConnectToLowestDelayServer=true; pingInterval=15
 
@@ -16,4 +16,4 @@ vless://8d1a65d6-9709-4c61-8f15-67bcf6d82fff@51.250.72.243:443?flow=xtls-rprx-vi
 vless://a5ca6aa5-0354-07d0-b094-741b1dfe4daa@109.120.189.87:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=qq&sni=max.ru&pbk=4CH3o5zOMcFNMbnwXnkAg0FFepmsc0QzhahXkUzb1ik&sid=d8c6b58bcbb0c323#🔵 VK (max.ru) [@NyxVPNtgk]
 vless://d6222986-6f3b-4e6d-ae8f-8e3cc833e9ac@109.120.181.41:443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=chrome&sni=io.ozone.ru&pbk=jSx3_X_tBAcNgp7SrKSfZnr5WN0cTN2ShEJv4rHceQU#🟠 VK (ozone) [@NyxVPNtgk]
 vless://2030daef-3048-4a1c-9573-8888e7e2f6b5@79.137.174.106:8443?flow=xtls-rprx-vision&type=tcp&headerType=none&security=reality&fp=random&sni=rbc.ru&pbk=7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg&sid=8ba12e75110b7a9c#🔵 VK (rbc.ru) [@NyxVPNtgk]
-vless://a5ca6aa5-0354-07d0-b094-741b1dfe4daa@212.193.153.187:443?type=ws&host=lk-cdn.deploy-assure.ru&path=//&security=tls&sni=lk-cdn.deploy-assure.ru&alpn=h2,http/1.1&fp=chrome&allowInsecure=0#🟠 WS Tunnel [@NyxVPNtgk]
+vless://a5ca6aa5-0354-07d0-b094-741b1dfe4daa@212.193.153.187:443?type=ws&host=lk-cdn.deploy-assure.ru&path=//&security=tls&sni=lk-cdn.deploy-assure.ru&alpn=h2,http/1.1&fp=chrome&allowInsecure=0#🟠 WS Tunnel [@NyxVPNtgk] 
