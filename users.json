@@ -1,11 +1,16 @@
 {
   "users": [
     {
-      "uuid": "8d1a65d6-9709-4c61-8f15-67bcf6d82fff",
-      "expire": 1750089600,
-      "telegram": "@vasya",
-      "config": "vless://8d1a65d6-9709...",
-      "servers": ["51.250.94.162", "51.250.5.137"]
+      "id": "user1",
+      "first_seen": "2026-03-07T12:00:00Z",
+      "expire_date": "2026-05-07T12:00:00Z",
+      "active": true
+    },
+    {
+      "id": "user2",
+      "first_seen": "2026-03-08T15:30:00Z",
+      "expire_date": "2026-05-08T15:30:00Z",
+      "active": true
     }
   ]
 }
