@@ -1,6 +1,6 @@
 #profile-title: base64:8J+Rv+KAje+4j0BOWVhWTlAg4pewINCf0YDQtdC80LjRg9C8IDIg0LzQtdGB0Y/RhtCwIPCfjI8g8J+RgA==
 #profile-update-interval: 12
-#subscription-userinfo: upload=0; download=0; total=322122547200; expire=0
+#subscription-userinfo: upload=0; download=0; total=322122547200; expire=31.05.2026
 #expire-warning: 7,3,1
 #support-url: https://t.me/BlackSupportt
 #profile-web-page-url: https://t.me/NyxVPNtgk
