@@ -1,0 +1,184 @@
+{
+  "burstObservatory": {
+    "pingConfig": {
+      "connectivity": "direct",
+      "destination": "http://www.gstatic.com/generate_204",
+      "interval": "30s",
+      "sampling": 3,
+      "timeout": "3s"
+    },
+    "subjectSelector": ["Ru_TO", "Ru_TO-2", "Ru_TO-3", "Ru_TO-4", "Ru_TO-5", "proxy"]
+  },
+  "dns": {
+    "queryStrategy": "UseIP",
+    "servers": ["1.1.1.1", "8.8.8.8", "9.9.9.9"]
+  },
+  "inbounds": [
+    {
+      "listen": "127.0.0.1",
+      "port": 10808,
+      "protocol": "socks",
+      "settings": { "auth": "noauth", "udp": true },
+      "sniffing": { "destOverride": ["http", "tls", "quic"], "enabled": true },
+      "tag": "socks"
+    },
+    {
+      "listen": "127.0.0.1",
+      "port": 10809,
+      "protocol": "http",
+      "settings": { "allowTransparent": false },
+      "sniffing": { "destOverride": ["http", "tls", "quic"], "enabled": true },
+      "tag": "http"
+    }
+  ],
+  "log": { "loglevel": "warning" },
+  "outbounds": [
+    {
+      "tag": "Ru_TO",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{
+          "address": "maxsun.tconnect.services",
+          "port": 443,
+          "users": [{ "encryption": "none", "flow": "xtls-rprx-vision", "id": "8bfe3fe5-cd34-48c7-9d93-807ef3328b47" }]
+        }]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "IlzgbBZeMQEdflogxemsYWXUH3l-0sa8pqYPzVDQFlI",
+          "serverName": "sun6-21.userapi.com",
+          "shortId": "71e87186710e710e"
+        }
+      }
+    },
+    {
+      "tag": "Ru_TO-2",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{
+          "address": "efta.tconnect.services",
+          "port": 443,
+          "users": [{ "encryption": "none", "flow": "xtls-rprx-vision", "id": "8bfe3fe5-cd34-48c7-9d93-807ef3328b47" }]
+        }]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "KK3PpCIROYNt4zgMW2O3PvCMVjy-TQjPUz3eyKhRsVc",
+          "serverName": "cloudcdn-m9-6.cdn.yandex.net",
+          "shortId": "71e87186710e710e"
+        }
+      }
+    },
+    {
+      "tag": "Ru_TO-3",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{
+          "address": "okto.tconnect.services",
+          "port": 443,
+          "users": [{ "encryption": "none", "flow": "xtls-rprx-vision", "id": "8bfe3fe5-cd34-48c7-9d93-807ef3328b47" }]
+        }]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "Fl2K9Xwxt5SuHTfEEVaDQMeevm1p1PCykmgcfau2Uho",
+          "serverName": "78.img.avito.st",
+          "shortId": "71e87186710e710e"
+        }
+      }
+    },
+    {
+      "tag": "Ru_TO-4",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{
+          "address": "ennia.tconnect.services",
+          "port": 443,
+          "users": [{ "encryption": "none", "flow": "xtls-rprx-vision", "id": "8bfe3fe5-cd34-48c7-9d93-807ef3328b47" }]
+        }]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "_QEMdvFikQwEAlEFkD7vuHTBbL-gNdyoQFGwj45GZXU",
+          "serverName": "api-maps.yandex.ru",
+          "shortId": "71e87186710e710e"
+        }
+      }
+    },
+    {
+      "tag": "Ru_TO-5",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{
+          "address": "deka.tconnect.services",
+          "port": 443,
+          "users": [{ "encryption": "none", "flow": "xtls-rprx-vision", "id": "8bfe3fe5-cd34-48c7-9d93-807ef3328b47" }]
+        }]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "fingerprint": "random",
+          "publicKey": "LXUbGk5ZESnejrnPqn0k_QHBXmcuEwSFYzITg0rGxQA",
+          "serverName": "66.img.avito.st",
+          "shortId": "71e87186710e710e"
+        }
+      }
+    },
+    {
+      "tag": "proxy",
+      "protocol": "vless",
+      "settings": {
+        "vnext": [{
+          "address": "cdn.tconnect.services",
+          "port": 443,
+          "users": [{ "encryption": "none", "flow": "xtls-rprx-vision", "id": "8bfe3fe5-cd34-48c7-9d93-807ef3328b47" }]
+        }]
+      },
+      "streamSettings": {
+        "network": "tcp",
+        "security": "reality",
+        "realitySettings": {
+          "fingerprint": "chrome",
+          "publicKey": "OQ_JI-OWQHdkfiujfK1fU6Yp8Uw5w6vZD_9j0CWf3nM",
+          "serverName": "io.ozone.ru",
+          "shortId": "71e87186710e710e"
+        }
+      }
+    },
+    { "protocol": "freedom", "tag": "direct" },
+    { "protocol": "blackhole", "tag": "block" }
+  ],
+  "routing": {
+    "domainStrategy": "IPIfNonMatch",
+    "balancers": [{
+      "tag": "super_balancer",
+      "selector": ["Ru_TO", "Ru_TO-2", "Ru_TO-3", "Ru_TO-4", "Ru_TO-5", "proxy"],
+      "strategy": {
+        "type": "leastLoad",
+        "settings": {
+          "baselines": ["50ms", "100ms"],
+          "expected": 2,
+          "maxRTT": "1s"
+        }
+      }
+    }],
+    "rules": [
+      { "type": "field", "protocol": ["bittorrent"], "outboundTag": "direct" },
+      { "type": "field", "network": "tcp,udp", "balancerTag": "super_balancer" }
+    ]
+  }
+}
